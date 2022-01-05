@@ -18,12 +18,16 @@ class Model {
         $content .= '<code>';
         foreach ($attrs as $key => $value) {
             if (gettype($value) == "array") {
-                $content .= $key . " : <br>";
+                $content .= "<b>" . $key . "</b> : <br>";
                 foreach ($value as $v) {
-                    $content .= "    " . $v . "<br>";
+                    if (gettype($v) == "object") {
+                        $content .= "    " . $v->id . "<br>";
+                    } else {
+                        $content .= "    " . $v . "<br>";
+                    }
                 }
             } else {
-                $content .= $key . " : " . $value . "<br>";
+                $content .= "<b>" . $key . "</b> : " . $value . "<br>";
             }
 
         }

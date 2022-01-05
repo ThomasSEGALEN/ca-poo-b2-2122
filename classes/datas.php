@@ -18,7 +18,7 @@ class Datas {
             return false;
         }
 
-        $url = "swapi/" . $file . ".json";
+        $url = "swapi-datas/" . $file . ".json";
         $datas = json_decode(file_get_contents($url));
 
         return $datas;

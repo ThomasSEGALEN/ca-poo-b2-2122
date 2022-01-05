@@ -1,4 +1,6 @@
 <?php
 
 include_once('classes/main.php');
-new Main();
+
+$m = new Main();
+$m->printFirsts();
