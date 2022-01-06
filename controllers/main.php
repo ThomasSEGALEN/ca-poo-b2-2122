@@ -1,13 +1,13 @@
 <?php
 
-include_once('classes/datas.php');
+include_once('datas.php');
 
-include_once('classes/film.php');
-include_once('classes/people.php');
-include_once('classes/planet.php');
-include_once('classes/specie.php');
-include_once('classes/starship.php');
-include_once('classes/vehicle.php');
+include_once('models/film.php');
+include_once('models/people.php');
+include_once('models/planet.php');
+include_once('models/specie.php');
+include_once('models/starship.php');
+include_once('models/vehicle.php');
 
 class Main {
 

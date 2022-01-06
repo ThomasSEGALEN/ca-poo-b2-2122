@@ -4,7 +4,9 @@ class Model {
 
     public function __construct($datas) {
         $this->id = $datas->pk;
-        foreach ($datas->fields as $key => $value) { $this->$key = $value; }
+        foreach ($datas->fields as $key => $value) {
+            $this->$key = $value;
+        }
     }
 
     public function __toString()
